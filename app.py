@@ -13,15 +13,11 @@ ssl._create_default_https_context = ssl._create_unverified_context
 nltk.data.path.append(os.path.abspath("nltk_data"))
 nltk.download('punkt')
 
-# Create a function to ensure the directory exists
-def ensure_directory_exists(directory):
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
 # Load intents from the JSON file
-file_path = os.path.join(os.getcwd(), "ChatBot University", "intents.json")
-with open(file_path, "r", encoding='utf-8') as file:
+file_path = os.path.abspath("intents.json")
+with open(file_path, "r") as file:
     intents = json.load(file)
+
 
 # Create the vectorizer and classifier
 vectorizer = TfidfVectorizer(ngram_range=(1, 4))
@@ -30,53 +26,54 @@ clf = LogisticRegression(random_state=0, max_iter=10000)
 # Preprocess the data
 tags = []
 patterns = []
-for intent in intents.get('intents', []):
-    if isinstance(intent, dict) and 'patterns' in intent and 'tag' in intent:
-        for pattern in intent['patterns']:
-            tags.append(intent['tag'])
-            patterns.append(pattern)
+for intent in intents:
+    for pattern in intent['patterns']:
+        tags.append(intent['tag'])
+        patterns.append(pattern)
 
-# Train the model
+# training the model
 x = vectorizer.fit_transform(patterns)
 y = tags
 clf.fit(x, y)
 
-# Chatbot function
 def ChatBot(input_text):
-    input_text = input_text.lower().strip()  # Clean input
     input_text = vectorizer.transform([input_text])
     tag = clf.predict(input_text)[0]
-    for intent in intents.get('intents', []):
+    for intent in intents:
         if intent['tag'] == tag:
             response = random.choice(intent['responses'])
             return response
-
-# Ensure the directory for chat logs exists
-ensure_directory_exists('ChatBot University')
-
+        
 counter = 0
 
 def main():
     global counter
-    st.markdown("""
-        <div style="display: flex; justify-content: center;">
-            <img src="https://static.vecteezy.com/system/resources/previews/023/480/009/original/breast-cancer-awareness-symbol-pink-ribbon-isolated-on-black-background-vector.jpg" 
-            alt="Breast Cancer Awareness" 
-            style="width: 200px;">
-        </div>
-    """, unsafe_allow_html=True)
+    st.markdown(
+            """
+            <div style="display: flex; justify-content: center;">
+                <img src="https://static.vecteezy.com/system/resources/previews/023/480/009/original/breast-cancer-awareness-symbol-pink-ribbon-isolated-on-black-background-vector.jpg" 
+                 alt="Breast Cancer Awareness" 
+                 style="width: 200px;">
+             </div>
+            """,
+            unsafe_allow_html=True
+            )
     st.markdown('<h1 style="color: pink; text-align: center; font-size: 36px;">Chatbot for Breast Cancer</h1>', unsafe_allow_html=True)
+    # Add an image from a URL
 
+
+
+    # Create a sidebar menu with options
     menu = ["Home", "Conversation History", "About"]
     choice = st.sidebar.selectbox("Menu", menu)
 
     # Home Menu
     if choice == "Home":
         st.write("Welcome to the chatbot. Please type a message and press Enter to start the conversation.")
-        
+       
         # Check if the chat_log.csv file exists, and if not, create it with column names
-        if not os.path.exists('ChatBot University/chat_log.csv'):
-            with open('ChatBot University/chat_log.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        if not os.path.exists('ChatBot\chat_log.csv'):
+            with open('ChatBot\chat_log.csv', 'w', newline='', encoding='utf-8') as csvfile:
                 csv_writer = csv.writer(csvfile)
                 csv_writer.writerow(['User Input', 'Chatbot Response', 'Timestamp'])
 
@@ -84,13 +81,18 @@ def main():
         user_input = st.text_input("You:", key=f"user_input_{counter}")
 
         if user_input:
+
+            # Convert the user input to a string
             user_input_str = str(user_input)
+
             response = ChatBot(user_input)
             st.text_area("ChatBot:", value=response, height=120, max_chars=None, key=f"chatbot_response_{counter}")
 
-            timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            # Get the current timestamp
+            timestamp = datetime.datetime.now().strftime(f"%Y-%m-%d %H:%M:%S")
 
-            with open('ChatBot University/chat_log.csv', 'a', newline='', encoding='utf-8') as csvfile:
+            # Save the user input and chatbot response to the chat_log.csv file
+            with open('chat_log.csv', 'a', newline='', encoding='utf-8') as csvfile:
                 csv_writer = csv.writer(csvfile)
                 csv_writer.writerow([user_input_str, response, timestamp])
 
@@ -100,29 +102,45 @@ def main():
 
     # Conversation History Menu
     elif choice == "Conversation History":
+        # Display the conversation history in a collapsible expander
         st.header("Conversation History")
-        with open('ChatBot University/chat_log.csv', 'r', encoding='utf-8') as csvfile:
+        # with st.beta_expander("Click to see Conversation History"):
+        with open('chat_log.csv', 'r', encoding='utf-8') as csvfile:
             csv_reader = csv.reader(csvfile)
-            next(csv_reader)  # Skip header
+            next(csv_reader)  # Skip the header row
             for row in csv_reader:
                 st.text(f"User: {row[0]}")
                 st.text(f"ChatBot: {row[1]}")
                 st.text(f"Timestamp: {row[2]}")
                 st.markdown("---")
 
-    # About Menu
     elif choice == "About":
-        st.write("The goal of this project is to create a chatbot that can understand and respond to user input based on intents.")
+        st.write("The goal of this project is to create a chatbot that can understand and respond to user input based on intents. The chatbot is built using Natural Language Processing (NLP) library and Logistic Regression, to extract the intents and entities from user input. The chatbot is built using Streamlit, a Python library for building interactive web applications.")
+
         st.subheader("Project Overview:")
+
         st.write("""
-        The project uses NLP techniques, Logistic Regression, and Streamlit to create a chatbot interface.
+        The project is divided into two parts:
+        1. NLP techniques and Logistic Regression algorithm is used to train the chatbot on labeled intents and entities.
+        2. For building the Chatbot interface, Streamlit web framework is used to build a web-based chatbot interface. The interface allows users to input text and receive responses from the chatbot.
         """)
+
         st.subheader("Dataset:")
+
         st.write("""
-        The dataset contains labeled intents and entities used to train the chatbot.
+        The dataset used in this project is a collection of labelled intents and entities. The data is stored in a list.
+        - Intents: The intent of the user input (e.g. "greeting", "budget", "about")
+        - Entities: The entities extracted from user input (e.g. "Hi", "How do I create a budget?", "What is your purpose?")
+        - Text: The user input text.
         """)
+
+        st.subheader("Streamlit Chatbot Interface:")
+
+        st.write("The chatbot interface is built using Streamlit. The interface includes a text input box for users to input their text and a chat window to display the chatbot's responses. The interface uses the trained model to generate responses to user input.")
+
         st.subheader("Conclusion:")
-        st.write("The project builds a chatbot using NLP, Logistic Regression, and Streamlit.")
+
+        st.write("In this project, a chatbot is built that can understand and respond to user input based on intents. The chatbot was trained using NLP and Logistic Regression, and the interface was built using Streamlit. This project can be extended by adding more data, using more sophisticated NLP techniques, deep learning algorithms.")
 
 if __name__ == '__main__':
     main()
