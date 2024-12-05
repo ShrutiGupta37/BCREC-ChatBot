@@ -1,0 +1,521 @@
+{
+    "intents": [
+        {
+            "tag": "college_name",
+            "patterns": [
+                "college name?",
+                "name of the college?",
+                "Tell me about your college",
+                "name of the institution?"
+            ],
+            "responses": [
+                "The name of the college is Dr. B.C. Roy Engineering College.",
+                "Our college is known as Dr. B.C. Roy Engineering College. You can find more details on our website: https://bcrec.ac.in/."
+            ]
+        },
+        {
+            "tag": "hod_details",
+            "patterns": [
+                "HOD of Civil Engineering?",
+                "about the department heads.",
+                "head the Mechanical Engineering department?",
+                "head the Compurte Science & Engineering department?",
+                "HOD","head of the department"
+            ],
+            "responses": [
+                "Here are the HODs of various departments:- Civil Engineering: Dr. Sanjay Sengupta\n- Mechanical Engineering: Dr. Chandan Chattoraj\n- Electrical Engineering: Dr. Susanta Dutta\n- Electronics and Communication Engineering (ECE): Dr. Narendra Nath Pathak\n- Computer Science and Design (CSD): Dr. Raj Kumar Samanta\n- Computer Science and Engineering (CSE): Dr. Arindam Ghosh\n- Computer Science and Engineering (Data Science): Dr. Chandan Bandyopadhyay\n- Artificial Intelligence and Machine Learning (AIML): Dr. Gour Sundar Mitra Thakur"
+            ]
+        },
+        {
+            "tag": "principal_details",
+            "patterns": [
+                "principal of the college?",
+                "about the principal.",
+                "Principal",
+                "Who is principal?"
+            ],
+            "responses": [
+                "The principal of Dr. B.C. Roy Engineering College is Dr. Sanjay S. Pawar, Ph.D."
+            ]
+        },
+        {
+            "tag": "placement_details",
+            "patterns": [
+                "placement details",
+                "about placements at the college.",
+                "Which companies visit for placements?",
+                "Placement","How is the placement?"
+            ],
+            "responses": [
+                "Dr. B.C. Roy Engineering College has a strong placement record. Major recruiters include Accenture, IBM, Infosys, Wipro, Cognizant, Capgemini, Jaro, Koyo, Indus Net, TCS, and others. In 2023, the average package for Computer Science and Engineering students was INR 3.80 Lakh, with the highest package reaching INR 14.00 Lakh."
+            ]
+        },
+        {
+            "tag": "scholarships",
+            "patterns": [
+                "What scholarships are available?",
+                "about scholarships at the college.",
+                "Are there any financial aids for students?","Scholarship","different kind of scholarship"
+            ],
+            "responses": [
+                "Scholarships offered include:\n- Tuition Fee Waiver (TFW) Scheme: For economically backward meritorious students.\n- West Bengal Financial Scheme (WBFS): For economically backward meritorious students.\nEligibility criteria include academic merit, family income, and category-based considerations."
+            ]
+        },
+        {
+            "tag": "facilities",
+            "patterns": [
+                "What facilities does the college provide?",
+                "about the infrastructure",
+                "about hostels","Hostels","Sports","about sports","infrastructure","Facilities","different kind of facility",
+                "Are there hostels and sports facilities?"
+            ],
+            "responses": [
+                "Facilities include:\n- Academic: Well-equipped classrooms, laboratories, and libraries.\n- Sports: Football ground, cricket playground, basketball court, multi-gym.\n- Recreational: Music room, canteen, food court.\n- Hostel: Four large hostels.\n- Others: Auditorium, bank, and online class facilities."
+            ]
+        },
+        {
+            "tag": "admission_process",
+            "patterns": [
+                "What is the admission process?",
+                "admission process","about admission process","Admission","how to apply","application",
+                "How can I apply to the college?"
+            ],
+            "responses": [
+                "Admissions are based on WBJEE or JEE Mains ranks. The process involves entrance exams, counseling, document verification, and fee payment. For more details, visit the admission section on our website: https://bcrec.ac.in/."
+            ]
+        },
+        {
+            "tag": "fee_structure",
+            "patterns": [
+                "fee structure","cost","Fee","semester fee",
+                "How much is the semester fee?",
+                "about the tuition fees.","tuition fees","payment process for fees"
+            ],
+            "responses": [
+                "Fee structure per semester (without hostel):\n- CSE/IT/ECE: ₹71,050\n- EE/ME/CE/CSD: ₹67,050\n\nWith hostel:\n- CSE/IT/ECE: ₹1,06,050\n- EE/ME/CE/CSD: ₹1,02,050"
+            ]
+        },
+        {
+            "tag": "anti_ragging",
+            "patterns": [
+                "anti-ragging policy","Ragging","anti-ragging","anti-ragging comitte",
+                "How college handle ragging?"
+            ],
+            "responses": [
+                "Dr. B.C. Roy Engineering College has a strict anti-ragging policy. The college has an active Anti-Ragging Committee and organizes awareness programs to prevent ragging. Students can report incidents to the Anti-Ragging Committee or college authorities."
+            ]
+        },
+        {
+            "tag": "uniform_details",
+            "patterns": [
+                "dress code","uniform",
+                "What is the dress code?",
+                "Is there a uniform for students?"
+            ],
+            "responses": [
+                "Dress code:\nFor Men: Navy blue trousers, light blue shirt, emblem-emblazoned green/yellow/black ties, black formal shoes. Navy blue blazer in winter.\nFor Women: Navy blue salwar and light blue kameez or trousers and shirts, emblem-emblazoned green ties, black formal shoes. Navy blue blazer in winter."
+            ]
+        },
+        {
+            "tag": "sports_facilities",
+            "patterns": [
+                "different kind of sports","sports available","sports facilities",
+                "What sports facilities are available?",
+                "about the sports infrastructure","sports infrastructure","Extraextra curricular activity"
+            ],
+            "responses": [
+                "Sports facilities include:\nIndoor: Gymnasium, table tennis.\nOutdoor: Football field, cricket ground, basketball court, volleyball court.\nAnnual events: Annual Sports Meet, Inter-Departmental Tournaments."
+            ]
+        },
+        {
+            "tag": "college_intake",
+            "patterns": [
+                "seat availability?",
+                "how many seats available","seat available","intake",
+                "How many students are admitted per branch?"
+            ],
+            "responses": [
+                "Seat availability varies each year. For accurate details, visit the official website: https://bcrec.ac.in/ or contact the admission office."
+            ]
+        },
+        {
+            "tag": "salutation",
+            "patterns": [
+                "okk",
+                "okie",
+                "nice work",
+                "well done",
+                "good job",
+                "thanks for the help",
+                "Thank You",
+                "its ok",
+                "Thanks",
+                "Good work",
+                "k",
+                "ok",
+                "okay"
+            ],
+            "responses": [
+                "I am glad I helped you",
+                "Glad I could help",
+                "Welcome, anything else I can assist you with?"
+            ]
+        },
+        {
+            "tag": "task",
+            "patterns": [
+                "what can you do",
+                "what are the things you can do",
+                "things you can do",
+                "what can u do for me",
+                "how u can help me",
+                "why I should use you","how can you help"
+            ],
+            "responses": [
+                "I can answer low-intermediate questions regarding the college.",
+                "You can ask me questions regarding the college, and I will try to answer them."
+            ]
+        },
+        {
+            "tag": "swear",
+            "patterns": [
+                "fuck",
+                "bitch",
+                "shut up",
+                "hell",
+                "stupid",
+                "idiot",
+                "dumb ass",
+                "asshole",
+                "fucker"
+            ],
+            "responses": [
+                "Please use appropriate language.",
+                "Maintaining decency would be appreciated."
+            ]
+        },
+        {
+            "tag": "random",
+            "patterns": [
+                "I love you",
+                "Will you marry me",
+                "Do you love me"
+            ],
+            "responses": [
+                "I am not programmed for this, please ask an appropriate query."
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "How are you?",
+                "Is anyone there?",
+                "Hello",
+                "Good day",
+                "What's up",
+                "how are ya",
+                "heyy",
+                "whatsup",
+                "??? ??? ??"
+            ],
+            "responses": [
+                "Hello!",
+                "Hello! Welcome to the BCREC Assistant ChatBot. How can I help you today?", "Hi there! Feel free to ask any questions about the college.",
+                "Hi there, how can I help?"
+            ]
+        }
+        ,
+        {
+        "tag": "goodbye",
+        "patterns": [
+            "Bye",
+            "See you later",
+            "Goodbye",
+            "Take care"
+        ],
+        "responses": [
+           "Goodbye! Stay healthy and happy.", "Take care! Let me know if you have more questions in the future."
+        ]
+        }
+        ,
+        {
+            "tag": "help",
+            "patterns": [
+                "Help",
+                "I need help",
+                "Can you help me","help please"
+            ],
+            "responses": [
+                "Sure, what do you need help with?",
+                "I'm here to help. What's the problem?",
+                "How can I assist you?"
+            ]
+        }
+        ,
+        {
+        "tag": "name",
+        "patterns": [
+            "your name",
+            "Do you have a name",
+            "What should I call you"
+        ],
+        "responses": [
+            "You can call me Chatbot.",
+            "My name is Chatbot."
+        ]
+        }
+        ,
+        {
+        "tag": "compliment",
+        "patterns": [
+            "You're awesome",
+            "You're great",
+            "I like you"
+        ],
+        "responses": [
+            "Thank you! I'm just a program, but I'm here to assist and make your experience better.",
+            "I'm glad you think so! My purpose is to help and provide useful information."
+        ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "How can I contact the college?",
+                "college email address?",
+                "share the contact details","contact","Email","how to contact","phone number",
+                "phone number for the admissions office?"
+            ],
+            "responses": [
+                "You can reach us at our official email: info@bcrec.ac.in or call us at +91-6297128554.Feel free to email or call us during office hours. We're here to help!"
+            ]
+        },
+        {
+            "tag": "campus_life",
+            "patterns": [
+                "campus life like?",
+                "about the events on campus",
+                "Do you have any clubs or societies?",
+                "Is the campus fun?",
+                "What extracurricular activities are available?"
+            ],
+            "responses": [
+                "Our campus is vibrant and full of life! We have cultural events, tech fests, sports meets, and more. You'll never run out of things to do!",
+                "We have a variety of clubs, including Coding, Drama, Photography, and Sports. Which one are you interested in?",
+                "Campus life here is amazing! Students participate in hackathons, debates, music & dance and more. Let me know if you'd like event details."
+            ]
+        },
+        {
+            "tag": "exam_schedule",
+            "patterns": [
+                "When are the exams?",
+                "exam timetable?",
+                "about the midterm schedule",
+                "How I check my exam dates?",
+                "Are the exam dates announced?"
+            ],
+            "responses": [
+                "The exam schedule is available on the college portal.Visit here for more details https://bcrec.ac.in/.",
+                "Midterm and final exam dates are shared via the college notice board and website. Let me know if you need help finding them!",
+                "You can download the exam timetable from the academic section of our website.Visit here for more details https://bcrec.ac.in/."
+            ]
+        },
+        {
+            "tag": "canteen",
+            "patterns": [
+                "canteen","about canteen","is canteen available?",
+                "Is there a canteen on campus?",
+                "What's the canteen menu like?",
+                "about the food option",
+                "Do you serve vegetarian food?",
+                "Is the canteen open on weekends?"
+            ],
+            "responses": [
+                "Yes, we have a canteen that serves a variety of dishes, including vegetarian and non-vegetarian options. It's a favorite spot for students!",
+                "The canteen is open on weekdays and weekends until 8 PM. Perfect for those late study sessions!"
+            ]
+        },
+        {
+            "tag": "tech_support",
+            "patterns": [
+                "having trouble logging in",
+                "website isn’t working",
+                "can't access my account",
+                "Who can help with technical issues?"
+            ],
+            "responses": [
+                "For login or account issues, please contact at +91-6297128554.",
+                "You can reset your password using the 'Forgot Password' link on the login page. Let me know if you need further help!",
+                "Technical issues? No worries! Reach out to the tech support team at +91-6297128554."
+            ]
+        },
+        {
+            "tag": "reset password",
+            "patterns":[
+                "How to reset my password?","reset password"
+            ],
+            "responses": [
+                "You can reset your password using the 'Forgot Password' link on the login page. Let me know if you need further help!"
+            ]
+        },
+        {
+            "tag": "coding_club",
+            "patterns": [
+                "Is there a Coding Club?",
+                "about the Coding Club",
+                "What Coding Club do?",
+                "Does the club host hackathons?","coding club"
+            ],
+            "responses": [
+                "The Coding Club is perfect for programming enthusiasts. We host coding contests, hackathons, and workshops on trending technologies like AI and blockchain."
+              
+            ]
+        }, 
+        {
+            "tag": "photography_club",
+            "patterns": [
+                "about the Photography Club",
+                "What does the Photography Club do?",
+                "Is there a photography club?","photography club"
+
+            ],
+            "responses": [
+                "The Photography Club is for students who love capturing moments. We organize photo walks, workshops, and competitions."
+              ]
+        },
+        {
+            "tag": "music_club",
+            "patterns": [
+                "Is there a Music Club?",
+                "about the Music Club",
+                "What does the Music Club do?"
+            ],
+            "responses": [
+                "The Music Club brings together singers, instrumentalists and music enthusiasts. We perform at cultural fests and host open mic nights."
+               ]
+        },
+        {
+            "tag": "library_facilities",
+            "patterns": [
+                "What facilities does the library offer?",
+                "library have Wi-Fi?",
+                "Are there study rooms in the library?",
+                "Do you have e-books or online resources?","library","about library"
+            ],
+            "responses": [
+                "Our library offers free Wi-Fi, study rooms, printing, and photocopying services. We also provide access to e-books and online journals.for more detalis you can visit here https://bcrec-opac.kohacloud.in/",
+                "You’ll find quiet study spaces and computers for research in the library. Printing and e-resource access are also available.for more detalis you can visit here https://bcrec-opac.kohacloud.in/",
+                "Yes, we offer facilities like Wi-Fi, e-books, online journals, study areas, and printing services.for more detalis you can visit here https://bcrec-opac.kohacloud.in/"
+            ]
+        },
+        {
+            "tag": "accreditation",
+            "patterns": [
+                "college accredited?",
+                "What are the accreditations of this college?",
+                "Is BCREC AICTE approved?",
+                "college have NBA accreditation?",
+                "Is this college NAAC accredited?","is it AICTE approved"
+            ],
+            "responses": [
+                "Yes, the college is approved by AICTE, accredited by NBA, and holds NAAC accreditation."
+            ]
+        },
+        {
+            "tag": "affiliation",
+            "patterns": [
+                "Which university is BCREC affiliated with?",
+                "Is the college affiliated with MAKAUT?",
+                "affiliated university of Dr. B. C. Roy Engineering College?","MAKAUT affiliated"
+            ],
+            "responses": [
+                "Dr. B. C. Roy Engineering College is affiliated with Maulana Abul Kalam Azad University of Technology (MAKAUT), West Bengal."
+            ]
+        },
+        {
+            "tag": "departments",
+            "patterns": [
+                "departments available at the college?",
+                "engineering branches are offered?",
+                "Does BCREC have a management department?",
+                "about the courses available in the college"
+            ],
+            "responses": [
+                "The college offers programs in various departments, including Computer Science and Engineering, Electrical Engineering, Electronics and Communication Engineering, Mechanical Engineering, Civil Engineering, Information Technology, and Management Studies."
+            ]
+        },
+        {
+            "tag": "autonomous_status",
+            "patterns": [
+                "Is the college autonomous?",
+                "What does it mean to be an autonomous college?",
+                "How is BCREC autonomous?","is it Autonomous college","autonomous"
+            ],
+            "responses": [
+                "Yes, Dr. B. C. Roy Engineering College is an autonomous institution affiliated with MAKAUT, West Bengal. This status allows the college to design its own curriculum and conduct its own examinations while being affiliated with the university."
+            ]
+        },
+        {
+            "tag": "solar_plant",
+            "patterns": [
+                "college use renewable energy?",
+                "about the solar plant in the college",
+                "Does BCREC have an SPV power plant?",
+                "SPV power plant"
+            ],
+            "responses": [
+                "Yes, the college has a Solar Photovoltaic (SPV) Power Plant, which contributes to sustainable and renewable energy usage on campus."
+            ]
+        },
+        {
+            "tag": "wifi",
+            "patterns": [
+                "college have Wi-Fi?",
+                "Is Wi-Fi available on campus?",
+                "Can I access Wi-Fi in the hostel?",
+                "about the Wi-Fi facilities","Wifi"
+            ],
+            "responses": [
+                "Yes, the campus has Wi-Fi facilities available for students and staff. The service is accessible in classrooms, hostels and other key areas to support academic and personal needs."
+            ]
+        },
+        {
+            "tag": "auditorium",
+            "patterns": [
+                "auditorium",
+                "college have an auditorium?",
+                "about the auditorium",
+                "Are there events held in the auditorium?",
+                "What is the capacity of the auditorium?"
+            ],
+            "responses": [
+                "BCREC has two auditoriums, namely the Nazrul Manch and a fully equipped mordern AC−Auditorium named “Dulal Mitra Auditorium.” Apart from that, the Institute also has one Seminar Hall named Albert Einstein Hall. The Albert Einstein Hall is fully air−conditioned and synchronized with sound systems and projectors facility for conduct of guest lectures, seminars etc. Nazrul Manch is an open air auditorium that accommodates over 900 students for cultural activities, fests etc."]
+        },
+        {
+            "tag": "medical_facilities",
+            "patterns": [
+                "medical emergencies","medical facilities",
+                "about the medical facilities in the college",
+                "Does the college have medical facilities?",
+                "Is there a hospital or clinic on campus?",
+                "What happens in case of medical emergencies?"
+            ],
+            "responses": [
+                "The college maintains a Medical Unit to provide medical aid to students under the expert supervision of our experienced resident physician in collaboration with The Mission Hospital, Durgapur. The MoU with The Mission Hospital provides for a Doctor positioned at the College premises from 12 noon to 5pm. Provision for ambulance services for admission in The Mission Hospital is available for 24 hours. In addition, a college car is always stationed for any medical emergency of any student during College hours and even beyond."]
+        },
+        {
+            "tag": "atm_banking_facility",
+            "patterns": [
+                "college have ATM facilities?",
+                "Is there a bank on campus?","bank",
+                "Where can I withdraw cash on campus?",
+                "Are there banking services in the college?"
+            ],
+            "responses": [
+                "The campus has AXIS Bank ATM and SBI ATM that provide 24 hrs. ATM Banking facility apart from the fully operational SBI Bank branch within the premises to facilitate monetary transactions for students and faculty alike."
+            ]
+        }
+
+
+    ]
+}
