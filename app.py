@@ -72,7 +72,7 @@ def main():
             <h1 style="color: cyan; font-size: 36px; margin-right: 20px;">BCREC ChatBot</h1>
             <img src="https://th.bing.com/th/id/OIP.DTyLgLWeuEQEm98Ga2OeVAHaHT?rs=1&pid=ImgDetMain" 
             alt="BCREC Logo" 
-            style="width: 80px;">
+            style="width: 50px;">
         </div>
         ''',
         unsafe_allow_html=True
