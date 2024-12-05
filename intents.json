@@ -464,7 +464,7 @@
         {
             "tag": "wifi",
             "patterns": [
-                "tell me about wifi" ,"Wifi facility","how is the wifi here"
+                "tell me about wifi" ,"Wifi facility","how is the wifi here",
                 "college have WiFi?",
                 "Is Wi-Fi available on campus?",
                 "Can I access Wi-Fi in the hostel?",
