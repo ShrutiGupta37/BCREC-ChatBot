@@ -1,5 +1,4 @@
-{
-    "intents": [
+[
         {
             "tag": "college_name",
             "patterns": [
@@ -516,6 +515,4 @@
             ]
         }
 
-
-    ]
-}
+]
