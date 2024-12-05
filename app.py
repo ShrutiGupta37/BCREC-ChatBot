@@ -49,6 +49,14 @@ counter = 0
 def main():
     global counter
     st.markdown(
+        """
+        <div style="display: flex; justify-content: center;">
+            <img src="https://th.bing.com/th/id/R.bf8f9e96e1bc35912e2f37327daaacad?rik=NX5ceQP1dFjHjQ&riu=http%3a%2f%2fbcrec.ac.in%2fpublic%2fstorage%2fslider_img%2fl7PmYgLFy46IHgSU6PXOabg7xSCKAjJOAdWGJj1P.jpg&ehk=q%2fER6nasbd9LxRr5k2lWGmEiOE2z8NL5ifNhcpu3WiQ%3d&risl=&pid=ImgRaw&r=0" alt="Banner" style="width: 100%; height: auto;">
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+    st.markdown(
             """
             <div style="display: flex; justify-content: center;">
                 <img src="https://th.bing.com/th/id/OIP.DTyLgLWeuEQEm98Ga2OeVAHaHT?rs=1&pid=ImgDetMain" 
