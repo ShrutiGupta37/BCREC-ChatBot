@@ -51,14 +51,14 @@ def main():
     st.markdown(
             """
             <div style="display: flex; justify-content: center;">
-                <img src="https://static.vecteezy.com/system/resources/previews/023/480/009/original/breast-cancer-awareness-symbol-pink-ribbon-isolated-on-black-background-vector.jpg" 
-                 alt="Breast Cancer Awareness" 
+                <img src="https://th.bing.com/th/id/OIP.DTyLgLWeuEQEm98Ga2OeVAHaHT?rs=1&pid=ImgDetMain" 
+                 alt="BCREC Logo" 
                  style="width: 200px;">
              </div>
             """,
             unsafe_allow_html=True
             )
-    st.markdown('<h1 style="color: pink; text-align: center; font-size: 36px;">Chatbot for Breast Cancer</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 style="color: cyan; text-align: center; font-size: 36px;">BCREC ChatBot</h1>', unsafe_allow_html=True)
     # Add an image from a URL
 
 
