@@ -67,16 +67,16 @@ def main():
     #         unsafe_allow_html=True
     #         )
     st.markdown(
-          '''
-          <h1 style="color: lime; text-align: center; font-size: 36px;">BCREC ChatBot</h1>
-          <div style="display: flex; justify-content: center;">
-              <img src="https://th.bing.com/th/id/OIP.DTyLgLWeuEQEm98Ga2OeVAHaHT?rs=1&pid=ImgDetMain" 
-               alt="BCREC Logo" 
-               style="width: 200px;">
-            </div>
-            ''',
-            unsafe_allow_html=True
-            )
+        '''
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <h1 style="color: lime; font-size: 36px; margin-right: 20px;">BCREC ChatBot</h1>
+            <img src="https://th.bing.com/th/id/OIP.DTyLgLWeuEQEm98Ga2OeVAHaHT?rs=1&pid=ImgDetMain" 
+            alt="BCREC Logo" 
+            style="width: 200px;">
+        </div>
+        ''',
+        unsafe_allow_html=True
+    )
     # Add an image from a URL
 
 
