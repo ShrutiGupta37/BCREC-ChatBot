@@ -1,4 +1,4 @@
-[
+ [
         {
             "tag": "college_name",
             "patterns": [
@@ -140,14 +140,19 @@
         {
             "tag": "salutation",
             "patterns": [
-                "ok",
-                "okay",
+                "okk",
+                "okie",
                 "nice work",
                 "well done",
                 "good job",
                 "thanks for the help",
                 "Thank You",
+                "its ok",
                 "Thanks",
+                "Good work",
+                "k",
+                "ok",
+                "okay"
             ],
             "responses": [
                 "I am glad I helped you",
@@ -464,11 +469,10 @@
         {
             "tag": "wifi",
             "patterns": [
-                "tell me about wifi" ,"Wifi facility","how is the wifi here",
-                "college have WiFi?",
+                "college have Wi-Fi?",
                 "Is Wi-Fi available on campus?",
                 "Can I access Wi-Fi in the hostel?",
-                "about the WiFi facilities","Wifi"
+                "about the Wi-Fi facilities","Wifi"
             ],
             "responses": [
                 "Yes, the campus has Wi-Fi facilities available for students and staff. The service is accessible in classrooms, hostels and other key areas to support academic and personal needs."
@@ -511,4 +515,6 @@
             ]
         }
 
+
 ]
+
