@@ -508,7 +508,7 @@
                 "college have ATM facilities?",
                 "Is there a bank on campus?","bank",
                 "Where can I withdraw cash on campus?",
-                "Are there banking services in the college?"
+                "Are there banking services in the college?","ATM","Bank","what ATM inside the campus","any Bank or ATM here?"
             ],
             "responses": [
                 "The campus has AXIS Bank ATM and SBI ATM that provide 24 hrs. ATM Banking facility apart from the fully operational SBI Bank branch within the premises to facilitate monetary transactions for students and faculty alike."
