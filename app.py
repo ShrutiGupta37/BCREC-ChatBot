@@ -69,7 +69,7 @@ def main():
     st.markdown(
         '''
         <div style="display: flex; justify-content: center; align-items: center;">
-            <h1 style="color: blue; font-size: 36px; margin-right: 20px;">BCREC ChatBot</h1>
+            <h1 style="color: cyan; font-size: 36px; margin-right: 20px;">BCREC ChatBot</h1>
             <img src="https://th.bing.com/th/id/OIP.DTyLgLWeuEQEm98Ga2OeVAHaHT?rs=1&pid=ImgDetMain" 
             alt="BCREC Logo" 
             style="width: 80px;">
