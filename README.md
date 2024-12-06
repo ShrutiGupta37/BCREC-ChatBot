@@ -1,4 +1,6 @@
 # BCREC-ChatBot
+[Click here to visit the ChatBot](https://8vwwjptzq2z73qt4rrwkfp.streamlit.app/)
+
 ## Overview
 The BCREC ChatBot is a chatbot designed for Dr. B.C. Roy Engineering College. It uses Natural Language Processing (NLP) to understand user inputs and provide responses. The chatbot recognizes different types of questions or requests (called "intents") and responds with pre-defined answers.
 ## Features
