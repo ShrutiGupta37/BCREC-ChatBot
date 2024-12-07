@@ -5,7 +5,7 @@
                 "college name?",
                 "name of the college?",
                 "Tell me about your college",
-                "name of the institution?"
+                "name of the institution?","institute name"
             ],
             "responses": [
                 "The name of the college is Dr. B.C. Roy Engineering College.",
@@ -17,9 +17,9 @@
             "patterns": [
                 "HOD of Civil Engineering?",
                 "about the department heads.",
-                "head the Mechanical Engineering department?",
-                "head the Compurte Science & Engineering department?",
-                "HOD","head of the department"
+                "head of the Mechanical Engineering department?",
+                "head of the Compurte Science & Engineering department?",
+                "HOD","head of the department","departmental head"
             ],
             "responses": [
                 "Here are the HODs of various departments:- Civil Engineering: Dr. Sanjay Sengupta\n- Mechanical Engineering: Dr. Chandan Chattoraj\n- Electrical Engineering: Dr. Susanta Dutta\n- Electronics and Communication Engineering (ECE): Dr. Narendra Nath Pathak\n- Computer Science and Design (CSD): Dr. Raj Kumar Samanta\n- Computer Science and Engineering (CSE): Dr. Arindam Ghosh\n- Computer Science and Engineering (Data Science): Dr. Chandan Bandyopadhyay\n- Artificial Intelligence and Machine Learning (AIML): Dr. Gour Sundar Mitra Thakur"
@@ -28,8 +28,9 @@
         {
             "tag": "principal_details",
             "patterns": [
+                "name of the principal",
                 "principal of the college?",
-                "about the principal.",
+                "about principal.",
                 "Principal",
                 "Who is principal?"
             ],
@@ -42,7 +43,7 @@
             "patterns": [
                 "placement details",
                 "about placements at the college.",
-                "Which companies visit for placements?",
+                "Which companies visit for placements?","company come","placement","on campus","company visits"
                 "Placement","How is the placement?"
             ],
             "responses": [
@@ -77,7 +78,7 @@
             "patterns": [
                 "What is the admission process?",
                 "admission process","about admission process","Admission","how to apply","application",
-                "How can I apply to the college?"
+                "How can I apply to the college?","how to get admission"
             ],
             "responses": [
                 "Admissions are based on WBJEE or JEE Mains ranks. The process involves entrance exams, counseling, document verification, and fee payment. For more details, visit the admission section on our website: https://bcrec.ac.in/."
@@ -88,7 +89,7 @@
             "patterns": [
                 "fee structure","cost","Fee","semester fee",
                 "How much is the semester fee?",
-                "about the tuition fees.","tuition fees","payment process for fees"
+                "about the tuition fees.","tuition fees","payment process for fees","semester fee"
             ],
             "responses": [
                 "Fee structure per semester (without hostel):\n- CSE/IT/ECE: ₹71,050\n- EE/ME/CE/CSD: ₹67,050\n\nWith hostel:\n- CSE/IT/ECE: ₹1,06,050\n- EE/ME/CE/CSD: ₹1,02,050"
@@ -109,7 +110,7 @@
             "patterns": [
                 "dress code","uniform",
                 "What is the dress code?",
-                "Is there a uniform for students?"
+                "Is there a uniform for students?","dress code of the college","dress"
             ],
             "responses": [
                 "Dress code:\nFor Men: Navy blue trousers, light blue shirt, emblem-emblazoned green/yellow/black ties, black formal shoes. Navy blue blazer in winter.\nFor Women: Navy blue salwar and light blue kameez or trousers and shirts, emblem-emblazoned green ties, black formal shoes. Navy blue blazer in winter."
@@ -120,7 +121,7 @@
             "patterns": [
                 "different kind of sports","sports available","sports facilities",
                 "What sports facilities are available?",
-                "about the sports infrastructure","sports infrastructure","Extraextra curricular activity"
+                "about the sports infrastructure","sports infrastructure","Extra curricular activity","outdoor games","sports"
             ],
             "responses": [
                 "Sports facilities include:\nIndoor: Gymnasium, table tennis.\nOutdoor: Football field, cricket ground, basketball court, volleyball court.\nAnnual events: Annual Sports Meet, Inter-Departmental Tournaments."
@@ -131,7 +132,7 @@
             "patterns": [
                 "seat availability?",
                 "how many seats available","seat available","intake",
-                "How many students are admitted per branch?"
+                "How many students are admitted per branch?","seat","number of seats","no. of seats"
             ],
             "responses": [
                 "Seat availability varies each year. For accurate details, visit the official website: https://bcrec.ac.in/ or contact the admission office."
@@ -257,7 +258,7 @@
         "patterns": [
             "your name",
             "Do you have a name",
-            "What should I call you"
+            "What should I call you","who are you","what is your name"
         ],
         "responses": [
             "You can call me Chatbot.",
@@ -270,7 +271,7 @@
         "patterns": [
             "You're awesome",
             "You're great",
-            "I like you"
+            "I like you","awesome","great"
         ],
         "responses": [
             "Thank you! I'm just a program, but I'm here to assist and make your experience better.",
@@ -283,7 +284,7 @@
                 "How can I contact the college?",
                 "college email address?",
                 "share the contact details","contact","Email","how to contact","phone number",
-                "phone number for the admissions office?"
+                "phone number for the admissions office?","how to contact"
             ],
             "responses": [
                 "You can reach us at our official email: info@bcrec.ac.in or call us at +91-6297128554.Feel free to email or call us during office hours. We're here to help!"
@@ -296,7 +297,7 @@
                 "about the events on campus",
                 "Do you have any clubs or societies?",
                 "Is the campus fun?",
-                "What extracurricular activities are available?"
+                "What extracurricular activities are available?","about campus"
             ],
             "responses": [
                 "Our campus is vibrant and full of life! We have cultural events, tech fests, sports meets, and more. You'll never run out of things to do!",
@@ -311,7 +312,7 @@
                 "exam timetable?",
                 "about the midterm schedule",
                 "How I check my exam dates?",
-                "Are the exam dates announced?"
+                "Are the exam dates announced?","semester exam date"
             ],
             "responses": [
                 "The exam schedule is available on the college portal.Visit here for more details https://bcrec.ac.in/.",
@@ -325,7 +326,7 @@
                 "canteen","about canteen","is canteen available?",
                 "Is there a canteen on campus?",
                 "What's the canteen menu like?",
-                "about the food option",
+                "about the food option","how is canteen",
                 "Do you serve vegetarian food?",
                 "Is the canteen open on weekends?"
             ],
@@ -337,6 +338,7 @@
         {
             "tag": "tech_support",
             "patterns": [
+             "login problem",
                 "having trouble logging in",
                 "website isn’t working",
                 "can't access my account",
@@ -360,6 +362,7 @@
         {
             "tag": "coding_club",
             "patterns": [
+               "coding culture","coding environment",
                 "Is there a Coding Club?",
                 "about the Coding Club",
                 "What Coding Club do?",
@@ -373,6 +376,7 @@
         {
             "tag": "photography_club",
             "patterns": [
+             "photography",
                 "about the Photography Club",
                 "What does the Photography Club do?",
                 "Is there a photography club?","photography club"
@@ -385,6 +389,7 @@
         {
             "tag": "music_club",
             "patterns": [
+               "music club","music culture",
                 "Is there a Music Club?",
                 "about the Music Club",
                 "What does the Music Club do?"
@@ -396,6 +401,7 @@
         {
             "tag": "library_facilities",
             "patterns": [
+               "library facility","books in library","library size","how is library","studying environment",
                 "What facilities does the library offer?",
                 "library have Wi-Fi?",
                 "Are there study rooms in the library?",
@@ -414,7 +420,7 @@
                 "What are the accreditations of this college?",
                 "Is BCREC AICTE approved?",
                 "college have NBA accreditation?",
-                "Is this college NAAC accredited?","is it AICTE approved"
+                "Is this college NAAC accredited?","is it AICTE approved","AICTE","AICTE approved"
             ],
             "responses": [
                 "Yes, the college is approved by AICTE, accredited by NBA, and holds NAAC accreditation."
@@ -424,7 +430,7 @@
             "tag": "affiliation",
             "patterns": [
                 "Which university is BCREC affiliated with?",
-                "Is the college affiliated with MAKAUT?",
+                "Is the college affiliated with MAKAUT?","Makaut","university name",
                 "affiliated university of Dr. B. C. Roy Engineering College?","MAKAUT affiliated"
             ],
             "responses": [
@@ -434,6 +440,7 @@
         {
             "tag": "departments",
             "patterns": [
+                "different departments","branches available",
                 "departments available at the college?",
                 "engineering branches are offered?",
                 "Does BCREC have a management department?",
@@ -447,7 +454,7 @@
             "tag": "autonomous_status",
             "patterns": [
                 "Is the college autonomous?",
-                "What does it mean to be an autonomous college?",
+                "What does it mean to be an autonomous college?","what is autonomous",
                 "How is BCREC autonomous?","is it Autonomous college","autonomous"
             ],
             "responses": [
@@ -460,7 +467,7 @@
                 "college use renewable energy?",
                 "about the solar plant in the college",
                 "Does BCREC have an SPV power plant?",
-                "SPV power plant"
+                "SPV power plant","solar plant","renewable energy","solar energy"
             ],
             "responses": [
                 "Yes, the college has a Solar Photovoltaic (SPV) Power Plant, which contributes to sustainable and renewable energy usage on campus."
@@ -470,9 +477,9 @@
             "tag": "wifi",
             "patterns": [
                 "college have Wi-Fi?",
-                "Is Wi-Fi available on campus?",
-                "Can I access Wi-Fi in the hostel?",
-                "about the Wi-Fi facilities","Wifi"
+                "Is WiFi available on campus?",
+                "Can I access WiFi in the hostel?",
+                "about the WiFi facilities","Wifi","what wifi","how is wifi","college wifi"
             ],
             "responses": [
                 "Yes, the campus has Wi-Fi facilities available for students and staff. The service is accessible in classrooms, hostels and other key areas to support academic and personal needs."
@@ -485,7 +492,7 @@
                 "college have an auditorium?",
                 "about the auditorium",
                 "Are there events held in the auditorium?",
-                "What is the capacity of the auditorium?"
+                "What is the capacity of the auditorium?","how is auditorium"
             ],
             "responses": [
                 "BCREC has two auditoriums, namely the Nazrul Manch and a fully equipped mordern AC−Auditorium named “Dulal Mitra Auditorium.” Apart from that, the Institute also has one Seminar Hall named Albert Einstein Hall. The Albert Einstein Hall is fully air−conditioned and synchronized with sound systems and projectors facility for conduct of guest lectures, seminars etc. Nazrul Manch is an open air auditorium that accommodates over 900 students for cultural activities, fests etc."]
@@ -497,7 +504,7 @@
                 "about the medical facilities in the college",
                 "Does the college have medical facilities?",
                 "Is there a hospital or clinic on campus?",
-                "What happens in case of medical emergencies?"
+                "What happens in case of medical emergencies?","hospital","Mission hospital"
             ],
             "responses": [
                 "The college maintains a Medical Unit to provide medical aid to students under the expert supervision of our experienced resident physician in collaboration with The Mission Hospital, Durgapur. The MoU with The Mission Hospital provides for a Doctor positioned at the College premises from 12 noon to 5pm. Provision for ambulance services for admission in The Mission Hospital is available for 24 hours. In addition, a college car is always stationed for any medical emergency of any student during College hours and even beyond."]
