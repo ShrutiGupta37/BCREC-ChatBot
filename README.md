@@ -29,7 +29,7 @@ The BCREC ChatBot is a chatbot designed for Dr. B.C. Roy Engineering College. It
 ## Usage
 * To run the chatbot application, execute the following command:
    ```bash
-   tstreamlit run app.py
+   streamlit run app.py
 ## Intents Data
 The chatbot's behavior is defined by the intents.json file, which contains various tags, patterns, and responses. You can modify this file to add new intents or change existing ones.
 ## Conversation History
